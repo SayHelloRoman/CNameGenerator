@@ -10,8 +10,8 @@ int main() {
     printf("Enter the number of characters: ");
     scanf("%d", &number_letters);
 
-    if(number_letters <= 0) {
-        printf("The number cannot be less than or equal to zero\n");
+    if(!number_letters) {
+        printf("The number cannot be equal to zero\n");
         return 1;
     }
 
